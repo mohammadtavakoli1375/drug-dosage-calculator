@@ -10,27 +10,8 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showDetails, setShowDetails] = useState(false);
 
-  // داروهای مورد نظر با اطلاعات کامل
+  // داروهای مورد نظر با اطلاعات کامل - بروزرسانی شده با آرایه کامل از فایل complete_drugs_array.js
   const drugs = [
-    {
-      id: 'paracetamol',
-      name: 'پاراستامول (استامینوفن)',
-      form: 'قرص 500mg',
-      commonDose: '500–1000mg هر 4–6 ساعت',
-      usage: 'خوراکی، بعد غذا یا با معده خالی',
-      indications: 'تب، دردهای خفیف تا متوسط',
-      contraindications: 'حساسیت به دارو',
-      interactions: 'الکل، وارفارین',
-      sideEffects: 'حالت تهوع، بثورات پوستی',
-      pregnancy: 'قابل مصرف در بارداری و شیردهی با احتیاط',
-      formula: '10-15 mg/kg/dose',
-      maxDose: '1000 mg',
-      frequency: 'هر 4-6 ساعت',
-      source: 'WHO Guidelines 2023',
-      maxDaily: '4000 mg',
-      category: 'مسکن و تب کاهنده',
-      dividedDose: 'هر 4-6 ساعت یک بار'
-    },
     {
       id: 'ibuprofen',
       name: 'ایبوپروفن',
@@ -414,7 +395,7 @@ const App = () => {
     {
       id: 'fluconazole',
       name: 'فلوکونازول',
-      form: 'قرص 150mg',
+      form: 'قرص',
       commonDose: '150mg تک‌دوز',
       usage: 'خوراکی',
       indications: 'عفونت قارچی واژن',
@@ -434,7 +415,7 @@ const App = () => {
       id: 'vitamin_b_complex',
       name: 'قرص ویتامین B کمپلکس',
       form: 'قرص',
-      commonDose: '1 قرص در روز',
+      commonDose: '500 میلی‌گرم روزی یک بار',
       usage: 'خوراکی',
       indications: 'کمبود ویتامین B، ضعف عمومی',
       contraindications: 'حساسیت',
@@ -453,7 +434,7 @@ const App = () => {
       id: 'azelastine',
       name: 'آزلستین',
       form: 'اسپری بینی',
-      commonDose: '1 پاف در هر سوراخ بینی روزی 2 بار',
+      commonDose: '0.1 میلی‌گرم/puff روزی دو بار',
       usage: 'استنشاقی',
       indications: 'آلرژی بینی',
       contraindications: 'رینیت باکتریایی',
@@ -471,8 +452,8 @@ const App = () => {
     {
       id: 'calcium_carbonate',
       name: 'قرص جوشان کلسیم',
-      form: 'قرص جوشان',
-      commonDose: '1 قرص در روز',
+      form: 'قرص',
+      commonDose: '500 میلی‌گرم روزی یک بار',
       usage: 'در آب حل شود',
       indications: 'کمبود کلسیم، پوکی استخوان',
       contraindications: 'هایپرکلسمی',
