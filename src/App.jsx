@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Updated for deployment
 import { Calculator, Info, BookOpen, AlertTriangle, Search, Pill, Heart, Syringe, FileText } from 'lucide-react';
 
 const App = () => {
